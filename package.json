@@ -1,0 +1,18 @@
+{
+  "name": "ai-support-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered support ticket resolution system",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "echo 'Run backend and frontend separately:' && echo '1. Terminal 1: cd backend && npm run dev' && echo '2. Terminal 2: cd frontend && npm run dev'",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "migrate": "cd backend && npm run migrate",
+    "seed": "cd backend && npm run seed",
+    "setup": "npm run install:all && npm run migrate && npm run seed"
+  },
+  "keywords": ["ai", "support", "tickets", "openai", "assistant"],
+  "author": "",
+  "license": "MIT"
+}
